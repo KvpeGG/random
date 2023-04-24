@@ -1,1 +1,2 @@
 E:\vs\Projects\Random\x64\Debug\Random.exe
+C:\Users\Administrator\Desktop\Nowy folder\Random\x64\Debug\Random.exe

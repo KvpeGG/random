@@ -135,7 +135,7 @@
       <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);raylibdll.lib</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
-      <Command>copy $(ProjectDir)\raylib\lib\raylib.dll $(OutputPath)</Command>
+      <Command>copy "$(ProjectDir)\raylib\lib\raylib.dll" "$(OutputPath)"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

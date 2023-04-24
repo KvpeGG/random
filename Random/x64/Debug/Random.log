@@ -1,6 +1,10 @@
 ﻿          1 file(s) copied.
   Main.c
-E:\vs\Projects\Random\Main.c(75,48): warning C4305: 'function': truncation from 'double' to 'float'
-E:\vs\Projects\Random\Main.c(76,49): warning C4305: 'function': truncation from 'double' to 'float'
-E:\vs\Projects\Random\Main.c(10,8): warning C4305: 'initializing': truncation from 'double' to 'float'
-  Random.vcxproj -> E:\vs\Projects\Random\x64\Debug\Random.exe
+C:\Users\Administrator\Desktop\Nowy folder\Random\Main.c(80,48): warning C4305: 'function': truncation from 'double' to 'float'
+C:\Users\Administrator\Desktop\Nowy folder\Random\Main.c(81,49): warning C4305: 'function': truncation from 'double' to 'float'
+C:\Users\Administrator\Desktop\Nowy folder\Random\Main.c(11,8): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Administrator\Desktop\Nowy folder\Random\Main.c(17,55): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Administrator\Desktop\Nowy folder\Random\Main.c(17,84): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Administrator\Desktop\Nowy folder\Random\Main.c(18,51): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Administrator\Desktop\Nowy folder\Random\Main.c(18,79): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Random.vcxproj -> C:\Users\Administrator\Desktop\Nowy folder\Random\x64\Debug\Random.exe

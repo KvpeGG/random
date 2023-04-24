@@ -1,4 +1,5 @@
 #include <raylib.h>
+#include <stdio.h>
 
 int main() {
 	InitWindow(800, 600, "first \"game\"");
@@ -8,33 +9,29 @@ int main() {
 	int playerSpeed = 350;
 	float velocity = 0;
 	float acceleration = 0.1;
-	Rectangle player = {posX, posY, 20, 20};
-	Rectangle enemy = { 200, 200, 20, 20 };
-	Texture2D playertexture = LoadTexture("E:/images/Player.png");
-	Texture2D enemytexture = LoadTexture("E:/images/Enemy.png");
+	
+	
+	Texture2D playertexture = LoadTexture("resources/Player.png");
+	Texture2D enemytexture = LoadTexture("resources/Enemy.png");
 
-	SetTextureFilter(enemytexture, TEXTURE_FILTER_BILINEAR);
-	SetTextureFilter(playertexture, TEXTURE_FILTER_BILINEAR);
+	Rectangle player = { posX, posY, playertexture.width * 0.15, playertexture.height * 0.15};
+	Rectangle enemy = { 200, 200, enemytexture.width * 0.15, enemytexture.height * 0.15};
+	
 
 	while (!WindowShouldClose()) {
 		
 		
 		Vector2 enemyPos;
-		enemyPos.x = 21;
-		enemyPos.y = 21;
+		enemyPos.x = 200;
+		enemyPos.y = 200;
 
 
 
 		Vector2 playerPos;
 		playerPos.x = posX;
 		playerPos.y = posY;
-
-		//collision detection:
-		bool collision = CheckCollisionRecs(player, enemy);
 		
-		if (collision) {
-			DrawText("collision", 500, 300, 12, BLUE);
-		}
+		
 		
 
 		posY += velocity;
@@ -63,9 +60,17 @@ int main() {
 		if (posY >= 564) {
 			posY = 564;
 		}
+		
+		player.x = posX;
+		player.y = posY;
 
+		bool collision = CheckCollisionRecs(player, enemy);
 
-
+		if (collision)
+		{
+			printf("Collision\n");
+		}
+		
 		BeginDrawing();
 		ClearBackground(RAYWHITE);
 		//DrawTexture(playertexture, posX, posY, WHITE);
