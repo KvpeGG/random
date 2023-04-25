@@ -73,8 +73,6 @@ int main() {
 		
 		BeginDrawing();
 		ClearBackground(RAYWHITE);
-		//DrawTexture(playertexture, posX, posY, WHITE);
-		//DrawRectangle(posX, posY, 20, 20, BLACK);
 		DrawFPS(600,580);
 		DrawText("first \"game\"", 700, 580, 15, BLACK);
 		DrawTextureEx(enemytexture, enemyPos, 0, 0.15, WHITE);
